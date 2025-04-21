@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Panic Alert System</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #fdf6f6;
+      text-align: center;
+      padding: 50px;
+    }
+
+    h1 {
+      color: #d32f2f;
+      font-size: 2.5em;
+    }
+
+    p {
+      font-size: 1.2em;
+      color: #555;
+    }
+
+    .alert {
+      background-color: #ffe6e6;
+      border: 2px solid #ff0000;
+      padding: 20px;
+      margin-top: 30px;
+      border-radius: 10px;
+      display: inline-block;
+      color: #b00020;
+      font-size: 1.5em;
+      animation: blink 1s infinite;
+    }
+
+    @keyframes blink {
+      0% { opacity: 1; }
+      50% { opacity: 0.3; }
+      100% { opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+  <h1>Panic Alert Triggered 🚨</h1>
+  <p>An emergency signal was received from the ESP32 device.</p>
+  <div class="alert">
+    Please take immediate action!
+  </div>
+</body>
+</html>
